@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int R,s,t, ascii  ; 
+cin>>R;
+while (R-- >0){
+String S,T;
+cin>>S>>T;
+s = S.size();
+t = T.size();
+
+int Ar[26]={0}, Br[26]={0};
+
+for (int i=0; i<s; i++){
+	ascii = int(S[i]);
+	Ar[ascii-97] += 1;
+			}
+for (int j=0; j<t; j++){
+	ascii = int(T[j]);
+	Br[ascii-97] += 1;
+			}
+//FOR NOW  not considering all elements different :P
+int output = 0;
+for (int w=0; w<26; w++){if (Ar[w]>1 && Br[w]==0){output=1;}}
+
+
+if (output = 0)cout<<"A\n";
+else cout<<"B\n";
+}
+}
