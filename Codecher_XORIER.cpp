@@ -66,3 +66,4 @@ int main(){
 	}
 return 0; 
 }
+//lessons: 1. long long int  2. vectors  3. sort_algorithm
